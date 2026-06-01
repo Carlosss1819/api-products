@@ -6,6 +6,6 @@ const app=express();
 app.use(express.json());
 app.use(morgan("dev"));
 //Routes
-app.use (productsRoutes);
+app.use("/products", productsRoutes);
 //Start server
 export default app;
